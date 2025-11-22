@@ -59,13 +59,42 @@ import java.util.Scanner;
      public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
 
-         System.out.print("enter your name: ");
-         String name = scanner.nextLine();
-         System.out.println("hello " + name);
+//         System.out.print("enter your name: ");
+//         String name = scanner.nextLine();
+//         System.out.println("hello " + name);
+//
+//         System.out.print("Enter your age: ");
+//         int age = scanner.nextInt();
+//         System.out.println("your age is : " + age);
+//
+//         System.out.print("what is your gpa: ");
+//         double gpa = scanner.nextDouble();
+//         System.out.print("your gpa is: " + gpa);
+//
+//         System.out.println("hello " + name);
+//         System.out.println("yu are " + age + " years old");
+//         System.out.println("your gpa is: " + gpa);
+         double width = 0;
+         double length = 0;
+         double area =  0;
 
-         System.out.print("Enter your age: ");
-         int age = scanner.nextInt();
-         System.out.println("your age is : " + age);
+         System.out.println("calculate the area of rectangle");
+
+         System.out.print("input the breadth: ");
+         width = scanner.nextDouble();
+//         System.out.println(width);
+
+         System.out.print("enter your length: ");
+         length = scanner.nextDouble();
+//         System.out.println(length);
+
+//         System.out.println("length and breadth are : " + width + "" +  length
+//         );
+
+         area = width * length;
+         System.out.println("area = " + area + "cm");
+
+
 
          scanner.close();
 
