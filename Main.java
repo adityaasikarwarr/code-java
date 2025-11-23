@@ -53,11 +53,11 @@
 //    }
 //   }
 //};
-import java.util.Scanner;
-
- public class Main {
-     public static void main(String[] args) {
-         Scanner scanner = new Scanner(System.in);
+//import java.util.Scanner;
+//
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
 
 //         System.out.print("enter your name: ");
 //         String name = scanner.nextLine();
@@ -74,29 +74,63 @@ import java.util.Scanner;
 //         System.out.println("hello " + name);
 //         System.out.println("yu are " + age + " years old");
 //         System.out.println("your gpa is: " + gpa);
-         double width = 0;
-         double length = 0;
-         double area =  0;
+//         double width = 0;
+//         double length = 0;
+//         double area =  0;
+//
+//         System.out.println("calculate the area of rectangle");
+//
+//         System.out.print("input the breadth: ");
+//         width = scanner.nextDouble();
+////         System.out.println(width);
+//
+//         System.out.print("enter your length: ");
+//         length = scanner.nextDouble();
+////         System.out.println(length);
+//
+////         System.out.println("length and breadth are : " + width + "" +  length
+////         );
+//
+//         area = width * length;
+//         System.out.println("area = " + area + "cm");
+//
+//
+//
+//         scanner.close();
+//
+//     }
+//};
+ import java.util.Scanner;
 
-         System.out.println("calculate the area of rectangle");
+ public class Main {
+     public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
 
-         System.out.print("input the breadth: ");
-         width = scanner.nextDouble();
-//         System.out.println(width);
+         String adjective1;
+         String noun1;
+         String adjective2;
+         String verb1;
+         String adjective3;
 
-         System.out.print("enter your length: ");
-         length = scanner.nextDouble();
-//         System.out.println(length);
+         System.out.print("enter an adjective ");
+         adjective1 = scanner.nextLine();
 
-//         System.out.println("length and breadth are : " + width + "" +  length
-//         );
+         System.out.print("enter a adjective ");
+         adjective2 = scanner.nextLine();
 
-         area = width * length;
-         System.out.println("area = " + area + "cm");
+         System.out.print("enter an  adjective ");
+         adjective3 = scanner.nextLine();
+
+         System.out.print("enter a noun");;
+         noun1 = scanner.nextLine();
+
+         System.out.print("enter a verb with -ing (action)'");
+         verb1 = scanner.nextLine();
 
 
-
-         scanner.close();
-
+         System.out.println("today i went a " + adjective1 + " zoo");
+         System.out.println("in an exhibit , i saw a " + noun1 + ".");
+         System.out.println(noun1 + " was " + adjective2 + " and " + verb1 + "!");
+         System.out.println("I was " + adjective3 + "!");
      }
-}
+ }
