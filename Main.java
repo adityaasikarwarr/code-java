@@ -165,27 +165,68 @@
 //    };
 // }
 
+//
+//import java.util.Scanner;
+//import java.util.Random;
+//
+//public class Main {
+//    public static void main(String[] args){
+//
+//     Scanner scanner = new  Scanner(System.in);
+//     Random random = new Random();
+//
+//     int number ;
+//     number = random.nextInt(1 ,9);
+//     System.out.println(number);
+//
+//     boolean isHead ;
+//     isHead =  random.nextBoolean();
+//     if(isHead) {
+//         System.out.println("Heads");
+//     } else {
+//         System.out.println("tails");
+//     }
+//
+//    };
+//};
 
 import java.util.Scanner;
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args){
-     Scanner scanner = new  Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
-     Random random = new Random();
+    // calculate the hypotenuse
+    //    double a;
+    //    double b;
+    //    double c;
+//
+//        System.out.print("enter the length os side A : ");
+//        a =  scanner.nextDouble();
+//
+//        System.out.print("enter the length of side B : ");
+//        b = scanner.nextDouble();
+//
+//        c = Math.sqrt(Math.pow(a , 2) + Math.pow(b  , 2));
+//
+//        System.out.print("The hypotenuse of side c is : " + c + "cm");
 
-     int number ;
-     number = random.nextInt(1 ,9);
-     System.out.println(number);
+     // calculate the circumference , area and the volume.
+          double radius ;
+          double circumference;
+          double area;
+          double volume;
 
-     boolean isHead ;
-     isHead =  random.nextBoolean();
-     if(isHead) {
-         System.out.println("Heads");
-     } else {
-         System.out.println("tails");
-     }
+          System.out.print("enter the length of radius of the circle : ");
+          radius = scanner.nextDouble();
 
+          circumference = 2 * Math.PI * radius;
+          area = Math.PI * Math.pow(radius , 2);
+          volume = (4.0 / 3.0) * Math.PI * Math.pow(radius , 3);
+
+          System.out.println("The circumference is : " + circumference);
+          System.out.println("The area is : " + area);
+          System.out.println("The volume is : " + volume);
+
+   scanner.close();
     };
-};
+}
