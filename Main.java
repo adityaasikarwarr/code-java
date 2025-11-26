@@ -1,169 +1,169 @@
-public class Main  {
-public static void  main(String args[]) {
-System.out.println("hello world");
-}
-}
+// public class Main  {
+// public static void  main(String args[]) {
+// System.out.println("hello world");
+// }
+// }
 
-public class Main {
-    public static void main(String args[]) {
-        int a = 30;
-        if (a >= 10) {
-            if (a < 20) {
-                System.out.println("hello world");
-            } else {
-                System.out.println("hello universe");
-            }
-        } else if ( a >= 20) {
-            System.out.println("hello galaxy");
-        }
-          switch (a) {
-              int a = 3;
-                   case 1:
-                       System.out.println("hello world");
-                  break;
-                  case 2:
-                  System.out.println("hello universe");
-                  break;
-              case 3:
-                  System.out.println("hello galaxy");
-                  break;
-              case 4:
-                  System.out.println("hello multiverse");
-                  break;
-              default:
-                  System.out.println("invalid input");
-          }
-
-
-
-        for (int  i = 0 ; i < 10 ; i++){
-            System.out.println(i);
-      };
-
-public class Main {
-  public static void main(String[] args){
-      String name = "aditya sikarwarr";
-      int gta = 6;
-      double pi =  3.14159;
-      char gender = 'M';
-      boolean isAdmin = true;
-
-   if(isAdmin) {
-       System.out.println("hello  " + name  +  gta +   pi  + gender  ) ;
-   }
-  }
-};
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("enter your name: ");
-        String name = scanner.nextLine();
-        System.out.println("hello " + name);
-
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
-        System.out.println("your age is : " + age);
-
-        System.out.print("what is your gpa: ");
-        double gpa = scanner.nextDouble();
-        System.out.print("your gpa is: " + gpa);
-
-        System.out.println("hello " + name);
-        System.out.println("yu are " + age + " years old");
-        System.out.println("your gpa is: " + gpa);
-        double width = 0;
-        double length = 0;
-        double area =  0;
-
-        System.out.println("calculate the area of rectangle");
-
-        System.out.print("input the breadth: ");
-        width = scanner.nextDouble();
-        System.out.println(width);
-
-        System.out.print("enter your length: ");
-        length = scanner.nextDouble();
-        System.out.println(length);
-
-        System.out.println("length and breadth are : " + width + "" +  length
-        );
-
-        area = width * length;
-        System.out.println("area = " + area + "cm");
+// public class Main {
+//     public static void main(String args[]) {
+//         int a = 30;
+//         if (a >= 10) {
+//             if (a < 20) {
+//                 System.out.println("hello world");
+//             } else {
+//                 System.out.println("hello universe");
+//             }
+//         } else if ( a >= 20) {
+//             System.out.println("hello galaxy");
+//         }
+//           switch (a) {
+//               int a = 3;
+//                    case 1:
+//                        System.out.println("hello world");
+//                   break;
+//                   case 2:
+//                   System.out.println("hello universe");
+//                   break;
+//               case 3:
+//                   System.out.println("hello galaxy");
+//                   break;
+//               case 4:
+//                   System.out.println("hello multiverse");
+//                   break;
+//               default:
+//                   System.out.println("invalid input");
+//           }
 
 
 
-        scanner.close();
+//         for (int  i = 0 ; i < 10 ; i++){
+//             System.out.println(i);
+//       };
 
-    }
-};
-import java.util.Scanner;
+// public class Main {
+//   public static void main(String[] args){
+//       String name = "aditya sikarwarr";
+//       int gta = 6;
+//       double pi =  3.14159;
+//       char gender = 'M';
+//       boolean isAdmin = true;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+//    if(isAdmin) {
+//        System.out.println("hello  " + name  +  gta +   pi  + gender  ) ;
+//    }
+//   }
+// };
+// import java.util.Scanner;
 
-        String adjective1;
-        String noun1;
-        String adjective2;
-        String verb1;
-        String adjective3;
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("enter an adjective: ");
-        adjective1 = scanner.nextLine();
+//         System.out.print("enter your name: ");
+//         String name = scanner.nextLine();
+//         System.out.println("hello " + name);
 
-        System.out.print("enter a adjective: ");
-        adjective2 = scanner.nextLine();
+//         System.out.print("Enter your age: ");
+//         int age = scanner.nextInt();
+//         System.out.println("your age is : " + age);
 
-        System.out.print("enter an  adjective: ");
-        adjective3 = scanner.nextLine();
+//         System.out.print("what is your gpa: ");
+//         double gpa = scanner.nextDouble();
+//         System.out.print("your gpa is: " + gpa);
 
-        System.out.print("enter a noun: ");
-        noun1 = scanner.nextLine();
+//         System.out.println("hello " + name);
+//         System.out.println("yu are " + age + " years old");
+//         System.out.println("your gpa is: " + gpa);
+//         double width = 0;
+//         double length = 0;
+//         double area =  0;
 
-        System.out.print("enter a verb with -ing (action): ");
-        verb1 = scanner.nextLine();
+//         System.out.println("calculate the area of rectangle");
 
+//         System.out.print("input the breadth: ");
+//         width = scanner.nextDouble();
+//         System.out.println(width);
 
-        System.out.println("\n today i went a " + adjective1 + " zoo");
-        System.out.println("in an exhibit , i saw a " + noun1 + ".");
-        System.out.println(noun1 + " was " + adjective2 + " and " + verb1 + "!");
-        System.out.println("I was " + adjective3 + "!");
-    }
-};
+//         System.out.print("enter your length: ");
+//         length = scanner.nextDouble();
+//         System.out.println(length);
 
-shopping cart program
-import java.util.Scanner;
-public class Main {
-   public static void main(String[] args) {
-       Scanner scanner = new Scanner(System.in);
+//         System.out.println("length and breadth are : " + width + "" +  length
+//         );
 
-       String item;
-       double price;
-       int quantity;
-       char currency = '$';
-       double total;
-       System.out.print("what item would you like to have ?");
-       item = scanner.nextLine();
-
-       System.out.print("what is the price for each  ? ");
-       price = scanner.nextDouble();
-
-       System.out.print("whats the quantity you want ?");
-       quantity = scanner.nextInt();
-
-       total = price * quantity;
-
-       System.out.println("\nyou have bought " + quantity + " " + item);
-       System.out.println("your total is " + currency + total);
+//         area = width * length;
+//         System.out.println("area = " + area + "cm");
 
 
-       scanner.close();
-   };
-}
+
+//         scanner.close();
+
+//     }
+// };
+// import java.util.Scanner;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+
+//         String adjective1;
+//         String noun1;
+//         String adjective2;
+//         String verb1;
+//         String adjective3;
+
+//         System.out.print("enter an adjective: ");
+//         adjective1 = scanner.nextLine();
+
+//         System.out.print("enter a adjective: ");
+//         adjective2 = scanner.nextLine();
+
+//         System.out.print("enter an  adjective: ");
+//         adjective3 = scanner.nextLine();
+
+//         System.out.print("enter a noun: ");
+//         noun1 = scanner.nextLine();
+
+//         System.out.print("enter a verb with -ing (action): ");
+//         verb1 = scanner.nextLine();
+
+
+//         System.out.println("\n today i went a " + adjective1 + " zoo");
+//         System.out.println("in an exhibit , i saw a " + noun1 + ".");
+//         System.out.println(noun1 + " was " + adjective2 + " and " + verb1 + "!");
+//         System.out.println("I was " + adjective3 + "!");
+//     }
+// };
+
+// shopping cart program
+// import java.util.Scanner;
+// public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+
+//        String item;
+//        double price;
+//        int quantity;
+//        char currency = '$';
+//        double total;
+//        System.out.print("what item would you like to have ?");
+//        item = scanner.nextLine();
+
+//        System.out.print("what is the price for each  ? ");
+//        price = scanner.nextDouble();
+
+//        System.out.print("whats the quantity you want ?");
+//        quantity = scanner.nextInt();
+
+//        total = price * quantity;
+
+//        System.out.println("\nyou have bought " + quantity + " " + item);
+//        System.out.println("your total is " + currency + total);
+
+
+//        scanner.close();
+//    };
+// }
 
 
 import java.util.Scanner;
