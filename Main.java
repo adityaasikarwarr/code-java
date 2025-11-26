@@ -177,6 +177,15 @@ public class Main {
 
      int number ;
      number = random.nextInt(1 ,9);
-        System.out.println(number);
+     System.out.println(number);
+
+     boolean isHead ;
+     isHead =  random.nextBoolean();
+     if(isHead) {
+         System.out.println("Heads");
+     } else {
+         System.out.println("tails");
+     }
+
     };
 };
