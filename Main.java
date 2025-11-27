@@ -245,9 +245,20 @@ public class Main{
         System.out.printf("your age is %d \n", age);
         System.out.printf("your height is %f \n", height);
         System.out.printf("employed %b \n", isEmployed);
+        System.out.printf("%s is %d years old\n", name , age);
 
+        double prince1 = 9.99;
+        double prince2 = 756.76;
+        double prince3 = 87.99;
 
-        System.out.printf("%s is %d years old", name , age);
+        System.out.printf("%.1f\n", prince1);  //.1 is the precision added to the out to display up to the number given decimal places
+        System.out.printf("%.2f\n", prince2);
+        System.out.printf("%+.1f\n", prince3);
+
+        //= = output a plus
+        //, = comma grouping separator
+        // ( = negative numbers are enclosed in ()
+        // space = display a minus  if negative , space if positive
 
     }
 }
