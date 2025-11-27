@@ -234,34 +234,45 @@
 
 public class Main{
     public static void main(String[] args) {
-        String name = "aditya ";    //%S
-        char firstLetter = 'a';     //%c
-        int age = 30;               //%d
-        double height = 67.3;       //%f
-        boolean isEmployed = true;  //%b
+//        String name = "aditya ";    //%S
+//        char firstLetter = 'a';     //%c
+//        int age = 30;               //%d
+//        double height = 67.3;       //%f
+//        boolean isEmployed = true;  //%b
+//
+//        System.out.printf("hello %s\n", name );
+//        System.out.printf("your name starts with %c\n", firstLetter);
+//        System.out.printf("your age is %d \n", age);
+//        System.out.printf("your height is %f \n", height);
+//        System.out.printf("employed %b \n", isEmployed);
+//        System.out.printf("%s is %d years old\n", name , age);
+//
+//        double prince1 = 9.99;
+//        double prince2 = 756.76;
+//        double prince3 = 87.99;
+//
+//        System.out.printf("%.1f\n", prince1);  //.1 is the precision added to the out to display up to the number given decimal places
+//        System.out.printf("%.2f\n", prince2);
+//        System.out.printf("%+.1f\n", prince3);
 
-        System.out.printf("hello %s\n", name );
-        System.out.printf("your name starts with %c\n", firstLetter);
-        System.out.printf("your age is %d \n", age);
-        System.out.printf("your height is %f \n", height);
-        System.out.printf("employed %b \n", isEmployed);
-        System.out.printf("%s is %d years old\n", name , age);
-
-        double prince1 = 9.99;
-        double prince2 = 756.76;
-        double prince3 = 87.99;
-
-        System.out.printf("%.1f\n", prince1);  //.1 is the precision added to the out to display up to the number given decimal places
-        System.out.printf("%.2f\n", prince2);
-        System.out.printf("%+.1f\n", prince3);
-
-        //= = output a plus
+        //+ = output a plus
         //, = comma grouping separator
         // ( = negative numbers are enclosed in ()
         // space = display a minus  if negative , space if positive
         //  0 = zero padding
         // number =  right justified padding
         //negative number = left justified padding
+
+        int id1 = 1;
+        int id2 = 14;
+        int id3 = 145;
+        int id4 = 1456;
+
+        System.out.printf("%04d\n" , id1);
+        System.out.printf("%05d\n" , id2);
+        System.out.printf("%6d\n" , id3);
+        System.out.printf("%7d\n" , id4);
+
 
     }
 }
