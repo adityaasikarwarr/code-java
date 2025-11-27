@@ -259,6 +259,9 @@ public class Main{
         //, = comma grouping separator
         // ( = negative numbers are enclosed in ()
         // space = display a minus  if negative , space if positive
+        //  0 = zero padding
+        // number =  right justified padding
+        //negative number = left justified padding
 
     }
 }
