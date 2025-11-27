@@ -19,7 +19,8 @@
 //           switch (a) {
 //               int a = 3;
 //                    case 1:
-//                        System.out.println("hello world");
+//                        System.out.println("hello world");123
+
 //                   break;
 //                   case 2:
 //                   System.out.println("hello universe");
@@ -190,10 +191,10 @@
 //    };
 //};
 
-import java.util.Scanner;
-public class Main {
-    public static void main(String[] args){
-    Scanner scanner = new Scanner(System.in);
+//import java.util.Scanner;
+//public class Main {
+//    public static void main(String[] args){
+//    Scanner scanner = new Scanner(System.in);
 
     // calculate the hypotenuse
     //    double a;
@@ -211,22 +212,42 @@ public class Main {
 //        System.out.print("The hypotenuse of side c is : " + c + "cm");
 
      // calculate the circumference , area and the volume.
-          double radius ;
-          double circumference;
-          double area;
-          double volume;
+//          double radius ;
+//          double circumference;
+//          double area;
+//          double volume;
+//
+//          System.out.print("enter the length of radius of the circle : ");
+//          radius = scanner.nextDouble();
+//
+//          circumference = 2 * Math.PI * radius;
+//          area = Math.PI * Math.pow(radius , 2);
+//          volume = (4.0 / 3.0) * Math.PI * Math.pow(radius , 3);
+//
+//          System.out.println("The circumference is : " + circumference);
+//          System.out.println("The area is : " + area);
+//          System.out.println("The volume is : " + volume);
+//
+//   scanner.close();
+//    };
+//};
 
-          System.out.print("enter the length of radius of the circle : ");
-          radius = scanner.nextDouble();
+public class Main{
+    public static void main(String[] args) {
+        String name = "aditya ";    //%S
+        char firstLetter = 'a';     //%c
+        int age = 30;               //%d
+        double height = 67.3;       //%f
+        boolean isEmployed = true;  //%b
 
-          circumference = 2 * Math.PI * radius;
-          area = Math.PI * Math.pow(radius , 2);
-          volume = (4.0 / 3.0) * Math.PI * Math.pow(radius , 3);
+        System.out.printf("hello %s\n", name );
+        System.out.printf("your name starts with %c\n", firstLetter);
+        System.out.printf("your age is %d \n", age);
+        System.out.printf("your height is %f \n", height);
+        System.out.printf("employed %b \n", isEmployed);
 
-          System.out.println("The circumference is : " + circumference);
-          System.out.println("The area is : " + area);
-          System.out.println("The volume is : " + volume);
 
-   scanner.close();
-    };
+        System.out.printf("%s is %d years old", name , age);
+
+    }
 }
