@@ -276,32 +276,33 @@
 // }
 //};
 
- import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double principal;
-        double rate;
-        int timesCompound;
-        int year;
-        double amount;
-
-        System.out.print("Enter the principal amount: ");
-        principal = scanner.nextDouble();
-
-        System.out.print("Enter the interest rate: ");
-        rate = scanner.nextDouble() / 100;
-
-        System.out.print("enter the # of times compound per year: ");
-        timesCompound = scanner.nextInt();
-
-        System.out.print("Enter the # of years: ");
-        year = scanner.nextInt();
-
-        amount = principal * Math.pow(1 + rate / timesCompound, timesCompound * year);
-
-        System.out.printf("The amount after %d is %f ", year , amount);
-
-        scanner.close();
-    };
-}
+  // code to calculate compound interest.
+// import java.util.Scanner;
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        double principal;
+//        double rate;
+//        int timesCompound;
+//        int year;
+//        double amount;
+//
+//        System.out.print("Enter the principal amount: ");
+//        principal = scanner.nextDouble();
+//
+//        System.out.print("Enter the interest rate: ");
+//        rate = scanner.nextDouble() / 100;
+//
+//        System.out.print("enter the # of times compound per year: ");
+//        timesCompound = scanner.nextInt();
+//
+//        System.out.print("Enter the # of years: ");
+//        year = scanner.nextInt();
+//
+//        amount = principal * Math.pow(1 + rate / timesCompound, timesCompound * year);
+//
+//        System.out.printf("The amount after %d is %f ", year , amount);
+//
+//        scanner.close();
+//    };
+//}
