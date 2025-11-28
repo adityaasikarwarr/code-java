@@ -232,8 +232,8 @@
 //    };
 //};
 
-public class Main{
-    public static void main(String[] args) {
+//public class Main{
+//    public static void main(String[] args) {
 //        String name = "aditya ";    //%S
 //        char firstLetter = 'a';     //%c
 //        int age = 30;               //%d
@@ -263,16 +263,44 @@ public class Main{
         // number =  right justified padding
         //negative number = left justified padding
 
-        int id1 = 1;
-        int id2 = 14;
-        int id3 = 145;
-        int id4 = 1456;
+//        int id1 = 1;
+//        int id2 = 14;
+//        int id3 = 145;
+//        int id4 = 1456;
+//
+//        System.out.printf("%04d\n" , id1);
+//        System.out.printf("%05d\n" , id2);
+//        System.out.printf("%6d\n" , id3);
+//        System.out.printf(java
+//                "%7d\n" , id4);
+// }
+//}
+ import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double principal;
+        double rate;
+        int timesCompound;
+        int year;
+        double amount;
 
-        System.out.printf("%04d\n" , id1);
-        System.out.printf("%05d\n" , id2);
-        System.out.printf("%6d\n" , id3);
-        System.out.printf("%7d\n" , id4);
+        System.out.print("Enter the principal amount: ");
+        principal = scanner.nextDouble();
 
+        System.out.print("Enter the interest rate: ");
+        rate = scanner.nextDouble() / 100;
 
-    }
+        System.out.print("enter the # of times compound per year: ");
+        timesCompound = scanner.nextInt();
+
+        System.out.print("Enter the # of years: ");
+        year = scanner.nextInt();
+
+        amount = principal * Math.pow(1 + rate / timesCompound, timesCompound * year);
+
+        System.out.printf("The amount after %d is %f ", year , amount);
+
+        scanner.close();
+    };
 }
