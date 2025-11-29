@@ -305,4 +305,68 @@
 //
 //        scanner.close();
 //    };
-//}
+//};
+
+//public class Main{
+//    public static void main(String[] args) {
+//       String name = "aditya";
+//       int length = name.length();
+//       char letter = name.charAt(0);
+//       int index = name.indexOf("l");
+//       int lastIndex = name.lastIndexOf("o");
+
+//       name = name.toLowerCase();
+//       name = name.toUpperCase();
+//       name = name.trim();
+//       name = name.replace("0" , "a");
+
+//    if (name.isEmpty()) {
+//        System.out.println("your name is empty");
+//    } else {
+//        System.out.println("your name is : " + name);
+//    };
+
+//        if (name.contains(" "))
+//        {
+//            System.out.println("your name contain spaces");
+//
+//        } else {
+//            System.out.println("your name do not has space"); };
+//     if (name.equals("aditya"))
+//        {
+//            System.out.println("your name is correct");
+//
+//        } else {
+//            System.out.println("your name is not correct"); };
+//    };
+//  };
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        //.substring() = a method used to extract a portion of a string
+        // String.substring(start ,  end)
+     Scanner  scanner = new Scanner(System.in);
+
+        String email;
+        String username;
+        String domain;
+
+        System.out.print("enter your email");
+        email = scanner.nextLine();
+
+        if (email.contains("@")) {
+            username = email.substring(0 ,email.indexOf("@") );
+            domain = email.substring(email.indexOf("@") + 1);
+            System.out.println(username);
+            System.out.println(domain);
+        } else {
+            System.out.println("emails must contain  @");
+        };
+
+
+
+       scanner.close();
+
+    }
+}
