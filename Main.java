@@ -1,3 +1,4 @@
+import java.util.Scanner;
 // public class Main  {
 // public static void  main(String args[]) {
 // System.out.println("hello world");
@@ -428,3 +429,29 @@
 //        scanner.close();
 //    };
 // };
+//import java.util.Scanner;
+//public class Main{
+//
+//public static void main(String[] args) {
+//         Scanner scanner = new Scanner(System.in);
+//         String day ;
+//         System.out.print("enter the day of thw week: ");
+//         day = scanner.nextLine();
+//        switch (day) {
+
+//            case "monday" -> System.out.println("It is monday");
+//            case "tuesday" -> System.out.println("it is a weekday");
+//            case "wednesday" -> System.out.println("it is a weekday");
+//            case "thrusday" -> System.out.println("it is a weekday");
+//            case "friday" -> System.out.println("it is a weekday");
+//            case "saturday" -> System.out.println("it is a weekend");
+//            case "sunday" -> System.out.println("it is a weekend");
+//            default -> System.out.println(day + "it is not a day");
+
+//            case "monday" , "tuesday" ,"wednesday" , "thrusday" , "friday" ->
+//                    System.out.println("it is a weekday");
+//            case "saturday" , "sunday" ->
+//                    System.out.println("it is a weekend");
+//            default -> System.out.println(day + "it is not a day");
+//        };
+//}}
