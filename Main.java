@@ -36,8 +36,6 @@ import java.util.Scanner;
 //                   System.out.println("invalid input");
 //           }
 
-
-
 //         for (int  i = 0 ; i < 10 ; i++){
 //             System.out.println(i);
 //       };
@@ -92,14 +90,9 @@ import java.util.Scanner;
 
 //         System.out.println("length and breadth are : " + width + "" +  length
 //         );
-
 //         area = width * length;
 //         System.out.println("area = " + area + "cm");
-
-
-
 //         scanner.close();
-
 //     }
 // };
 // import java.util.Scanner;
@@ -128,7 +121,6 @@ import java.util.Scanner;
 
 //         System.out.print("enter a verb with -ing (action): ");
 //         verb1 = scanner.nextLine();
-
 
 //         System.out.println("\n today i went a " + adjective1 + " zoo");
 //         System.out.println("in an exhibit , i saw a " + noun1 + ".");
@@ -162,11 +154,9 @@ import java.util.Scanner;
 //        System.out.println("\nyou have bought " + quantity + " " + item);
 //        System.out.println("your total is " + currency + total);
 
-
 //        scanner.close();
 //    };
 // }
-
 
 // import java.util.Scanner;
 // import java.util.Random;
@@ -369,7 +359,6 @@ import java.util.Scanner;
 //    }
 // }
 
-
 // convert weights
 // import java.util.Scanner;
 // public class Main{
@@ -442,13 +431,13 @@ import java.util.Scanner;
 //            case "monday" -> System.out.println("It is monday");
 //            case "tuesday" -> System.out.println("it is a weekday");
 //            case "wednesday" -> System.out.println("it is a weekday");
-//            case "thrusday" -> System.out.println("it is a weekday");
+//            case "thursday" -> System.out.println("it is a weekday");
 //            case "friday" -> System.out.println("it is a weekday");
 //            case "saturday" -> System.out.println("it is a weekend");
 //            case "sunday" -> System.out.println("it is a weekend");
 //            default -> System.out.println(day + "it is not a day");
 
-//            case "monday" , "tuesday" ,"wednesday" , "thrusday" , "friday" ->
+//            case "monday" , "tuesday" ,"wednesday" , "thursday" , "friday" ->
 //                    System.out.println("it is a weekday");
 //            case "saturday" , "sunday" ->
 //                    System.out.println("it is a weekend");
@@ -457,45 +446,45 @@ import java.util.Scanner;
 //}}
 
 // calculator 
-public  class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        double num1;
-        double num2;
-        char operator;
-        double result = 0;
-        boolean validOperation = true;
-
-        System.out.print("Enter the first number: ");
-        num1 = scanner.nextDouble();
-
-        System.out.print("Enter an operator (+ , - , *, /, ^): ");
-        operator = scanner.next().charAt(0);
-
-        System.out.print("Enter the second number: ");
-        num2 = scanner.nextDouble();
-
-        switch (operator) {
-            case '+' -> result = num1 + num2;
-            case '-' -> result = num1 - num2;
-            case '*' -> result = num1 * num2;
-            case '/' -> {
-                if(num2 == 0) {
-                    System.out.println("can not be determined");
-                    validOperation = false;
-                } else {
-                    result = num1 / num2;
-                };
-            }
-            case '^' -> result = Math.pow(num1, num2);
-            default -> {
-                System.out.println("invalid operator");
-                 validOperation = false;
-            }
-        }
-      if (validOperation) {
-          System.out.println(result);
-      }
-    }
-};
+//public  class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//
+//        double num1;
+//        double num2;
+//        char operator;
+//        double result = 0;
+//        boolean validOperation = true;
+//
+//        System.out.print("Enter the first number: ");
+//        num1 = scanner.nextDouble();
+//
+//        System.out.print("Enter an operator (+ , - , *, /, ^): ");
+//        operator = scanner.next().charAt(0);
+//
+//        System.out.print("Enter the second number: ");
+//        num2 = scanner.nextDouble();
+//
+//        switch (operator) {
+//            case '+' -> result = num1 + num2;
+//            case '-' -> result = num1 - num2;
+//            case '*' -> result = num1 * num2;
+//            case '/' -> {
+//                if(num2 == 0) {
+//                    System.out.println("can not be determined");
+//                    validOperation = false;
+//                } else {
+//                    result = num1 / num2;
+//                };
+//            }
+//            case '^' -> result = Math.pow(num1, num2);
+//            default -> {
+//                System.out.println("invalid operator");
+//                 validOperation = false;
+//            }
+//        }
+//      if (validOperation) {
+//          System.out.println(result);
+//      }
+//    }
+//};
