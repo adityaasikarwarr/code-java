@@ -1,7 +1,5 @@
  // number guessing game
- import java.util.Random;
- import java.util.Scanner;
-//public class Class {
+ //public class Hello {
 //     public static void main(String[] args){
 //         Random random = new Random();
 //         Scanner scanner = new Scanner(System.in);
@@ -32,9 +30,7 @@
 //     }
 // };z
 
- // a game
-
-// public class Class {
+// public class Hello {
 //     public static void main(String[] args) {
 //         Scanner scanner = new Scanner(System.in);
 
@@ -61,5 +57,37 @@
 
 //     }
 // }
+
+ //method OR function
+ public class Hello {
+     public static void main(String[] args) {
+        String name = "bro";
+         happyBirthday(name);
+         happyHirthday(name);
+        double result = square(3);
+
+         System.out.println(square(5));
+         System.out.println(result);
+     }
+     static void happyBirthday(String name) {
+         System.out.println("happy birthday");
+         System.out.println("happy birthday dear! " + name);
+         System.out.println("happy birthday");
+         System.out.println("happy birthday");
+     };
+
+     // also can be written in this way
+     static void happyHirthday(String birthday) {
+         System.out.println("happy birthday");
+         System.out.println("happy birthday dear! " + birthday);
+         System.out.println("happy birthday");
+         System.out.println("happy birthday");
+
+     };
+
+     static double square(double number){
+         return number * number;
+     };
+}
 
  
