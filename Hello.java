@@ -59,55 +59,55 @@
 // }
 
  //method OR function
- public class Hello {
-     public static void main(String[] args) {
-        String name = "bro";
-         happyBirthday(name);
-         happyHirthday(name);
-        double result = square(3);
+//  public class Hello {
+//      public static void main(String[] args) {
+//         String name = "bro";
+//          happyBirthday(name);
+//          happyHirthday(name);
+//         double result = square(3);
 
-         System.out.println(square(5));
-         System.out.println(result);
-         System.out.println(getFulName("aditya" , "sikarwarr"));
+//          System.out.println(square(5));
+//          System.out.println(result);
+//          System.out.println(getFulName("aditya" , "sikarwarr"));
 
-         int age = 21;
-         if(ageCheck(age)) {
-             System.out.println("you make sign up");
-         } else {
-             System.out.println("you must be 18 ");
-         };
-     };
-     static void happyBirthday(String name) {
-         System.out.println("happy birthday");
-         System.out.println("happy birthday dear! " + name);
-         System.out.println("happy birthday");
-         System.out.println("happy birthday");
-     };
+//          int age = 21;
+//          if(ageCheck(age)) {
+//              System.out.println("you make sign up");
+//          } else {
+//              System.out.println("you must be 18 ");
+//          };
+//      };
+//      static void happyBirthday(String name) {
+//          System.out.println("happy birthday");
+//          System.out.println("happy birthday dear! " + name);
+//          System.out.println("happy birthday");
+//          System.out.println("happy birthday");
+//      };
 
-     // also can be written in this way
-     static void happyHirthday(String birthday) {
-         System.out.println("happy birthday");
-         System.out.println("happy birthday dear! " + birthday);
-         System.out.println("happy birthday");
-         System.out.println("happy birthday");
+//      // also can be written in this way
+//      static void happyHirthday(String birthday) {
+//          System.out.println("happy birthday");
+//          System.out.println("happy birthday dear! " + birthday);
+//          System.out.println("happy birthday");
+//          System.out.println("happy birthday");
 
-     };
+//      };
 
-     static double square(double number){
-         return number * number;
-     };
+//      static double square(double number){
+//          return number * number;
+//      };
 
-     static String getFulName (String first , String last) {
-         return first + "" + last;
-     };
+//      static String getFulName (String first , String last) {
+//          return first + "" + last;
+//      };
 
-     static boolean ageCheck(int age) {
-         if (age >= 18) {
-             return true;
-         } else {
-             return false;
-         }
-     };
-}
+//      static boolean ageCheck(int age) {
+//          if (age >= 18) {
+//              return true;
+//          } else {
+//              return false;
+//          }
+//      };
+// };
 
  
