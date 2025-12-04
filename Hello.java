@@ -110,4 +110,21 @@
 //      };
 // };
 
+ public class Hello {
+     public static void main(String[] args) {
+         String pizza = bake("flat bread");
+         System.out.println(bake(pizza));
+         System.out.println(add(1 , 2 ,2 ));
+     };
+     static double add(double a , double b){
+         return a + b;
+     };
+     static double add(double a , double b, double c){
+         return a + b + c;
+     };
+     static String bake(String bread){
+         return bread + " pizza";
+     };
+ }
+
  
