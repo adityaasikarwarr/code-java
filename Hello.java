@@ -142,30 +142,30 @@
 //  };
 
 //array
-import java.util.Scanner;
-public class Hello {
-    public static void main(String[] args) {
+// import java.util.Scanner;
+// public class Hello {
+//     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+//         Scanner scanner = new Scanner(System.in);
 
-        String[] foods ;
-        int size;
+//         String[] foods ;
+//         int size;
 
-        System.out.print("Enter the size of array you want: ");
-        size = scanner.nextInt();
-        scanner.nextLine();
+//         System.out.print("Enter the size of array you want: ");
+//         size = scanner.nextInt();
+//         scanner.nextLine();
 
-        foods = new String[size];
+//         foods = new String[size];
 
-        for (int i =0; i < foods.length ; i++) {
-            System.out.print("Enter a food: ");
-            foods[i] = scanner.nextLine();
-        };
+//         for (int i =0; i < foods.length ; i++) {
+//             System.out.print("Enter a food: ");
+//             foods[i] = scanner.nextLine();
+//         };
 
-        for(String food : foods) {
-            System.out.println(food);
-        };
-    }
-}
+//         for(String food : foods) {
+//             System.out.println(food);
+//         };
+//     }
+// }
 
  
