@@ -127,4 +127,19 @@
 //      };
 //  };
 
+ // variable scope
+ public class Hello {
+        static int x = 4; //class variable
+     public static void main(String[] args) {
+         int x = 2; // local variable
+         System.out.println(x);
+         doSomething();
+     };
+     static void doSomething(){
+//         int x = 2; // local variable
+         System.out.println(x);
+     };
+ };
+
+
  
