@@ -138,34 +138,70 @@
 //      static void doSomething(){
 // //         int x = 2; // local variable
 //          System.out.println(x);
-//      };
+//      };/
 //  };
 
 //array
 // import java.util.Scanner;
 // public class Hello {
 //     public static void main(String[] args) {
-
+//
 //         Scanner scanner = new Scanner(System.in);
-
+//
 //         String[] foods ;
+//
 //         int size;
-
+//
 //         System.out.print("Enter the size of array you want: ");
 //         size = scanner.nextInt();
 //         scanner.nextLine();
-
 //         foods = new String[size];
-
+//
 //         for (int i =0; i < foods.length ; i++) {
 //             System.out.print("Enter a food: ");
 //             foods[i] = scanner.nextLine();
 //         };
-
+//
 //         for(String food : foods) {
 //             System.out.println(food);
 //         };
 //     }
 // }
+
+// variable arguments or varargs
+// allow a method to accept a varying numbers of arguments make methods more flexible , no need for overloading methods java will pack the arguments into an array (... ellipses)
+//public class Hello {
+//    public static void main(String[] args) {
+//
+//        System.out.println(add(1,23,4));
+//        System.out.println(average(1,2,3,4,5,6,7,8));
+//
+//    };
+//
+//    static int add(int... numbers){
+//        int sum = 0;
+//        for(int number : numbers){
+//            sum += number;
+//        };
+//
+//      return sum;
+//    };
+//
+//    static double average(double... numbers){
+//
+//        double sum = 0;
+//
+//        if(numbers.length == 0){
+//            return 0;
+//        };
+//
+//        for (double number : numbers){
+//            sum += number;
+//        }; // enhanced for loop
+//
+//        return sum / numbers.length;
+//    };
+//};
+
 
  
