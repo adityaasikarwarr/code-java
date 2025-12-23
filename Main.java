@@ -330,13 +330,13 @@ import java.util.Scanner;
 //        } else {
 //            System.out.println("your name is not correct"); };
 //    };
-//  };
+//  };chNGES
 // import java.util.Scanner;
 
 // public class Main {
 //    public static void main(String[] args) {
-//        //.substring() = a method used to extract a portion of a string
-//        // String.substring(start ,  end)
+       //.substring() = a method used to extract a portion of a string
+       // String.substring(start ,  end)
 //     Scanner  scanner = new Scanner(System.in);
 
 //        String email;
