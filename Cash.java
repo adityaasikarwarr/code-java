@@ -27,13 +27,11 @@
                  case 3 -> balance -= withdraw(balance);
                  case 4 -> isRunning = false;
                  default -> System.out.println("INVALID CHOICE");
-             }
-         };
+             }};
          System.out.println("****************");
          System.out.println("Thank you ! have a nice day");
          System.out.println("****************");
-           scanner.close();
-     };
+           scanner.close();};
 
      static void showBalance(double balance) {
          System.out.printf("Balance = $ %.2f\n", balance);
