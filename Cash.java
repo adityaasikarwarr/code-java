@@ -18,6 +18,7 @@
              System.out.println("****************");
 
              System.out.print("Enter your choice (1-4): ");
+             
              choice = scanner.nextInt();
 
              switch (choice) {
