@@ -32,29 +32,27 @@ import java.util.Scanner;
 
 
 
+
 public class New {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        // Step 1: Take array size
-        System.out.print("Enter number of elements: ");
-        int n = sc.nextInt();
+        System.out.print("Enter size of array: ");
+        int size = input.nextInt();
 
-        int[] arr = new int[n];
+        int[] numbers = new int[size];
 
-        // Step 2: Take array elements
-        System.out.println("Enter " + n + " elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        System.out.println("Enter " + size + " numbers:");
+        for (int i = 0; i < size; i++) {
+            numbers[i] = input.nextInt();
         }
 
-        // Step 3: Print array
-        System.out.print("Array elements are:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
+        System.out.println("You entered:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(numbers[i] + " ");
         }
 
-        sc.close();
+        input.close();
     }
 }
