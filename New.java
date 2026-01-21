@@ -30,15 +30,31 @@ import java.util.Scanner;
 
 // }
 
+
+
 public class New {
     public static void main(String[] args) {
-        Scanner taking = new Scanner(System.in);
-        System.out.print("enter your name");
-        String name = taking.nextLine();
 
-        System.err.println("Your name is " + name);
+        Scanner sc = new Scanner(System.in);
 
-        taking.close();
+        // Step 1: Take array size
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
 
+        int[] arr = new int[n];
+
+        // Step 2: Take array elements
+        System.out.print("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Step 3: Print array
+        System.out.print("Array elements are:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        sc.close();
     }
 }
