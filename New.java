@@ -37,23 +37,21 @@ public class New {
 
         Scanner sc = new Scanner(System.in);
 
-        // Step 1: Take array size
-        System.out.print("Enter number of elements: ");
-        int n = sc.nextInt();
+    System.out.print("Enter number of names: ");
+int n = sc.nextInt();
+sc.nextLine(); // consume newline
 
-        int[] arr = new int[n];
+String[] names = new String[n];
 
-        // Step 2: Take array elements
-        System.out.print("Enter " + n + " elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+for (int i = 0; i < n; i++) {
+    System.out.print("Enter name " + (i + 1) + ": ");
+    names[i] = sc.nextLine();
+}
 
-        // Step 3: Print array
-        System.out.print("Array elements are:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
+for (String name : names) {
+    System.out.println(name);
+}
+
 
         sc.close();
     }
