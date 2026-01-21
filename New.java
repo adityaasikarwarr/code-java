@@ -32,13 +32,13 @@ public static void main(String[] args) {
 
 public class New {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner taking = new Scanner(System.in);
         System.out.print("enter your name");
-        String name = scanner.nextLine();
+        String name = taking.nextLine();
 
         System.err.println("Your name is " + name);
 
-        scanner.close();
+        taking.close();
 
     }
 }
