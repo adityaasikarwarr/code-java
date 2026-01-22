@@ -32,28 +32,24 @@ import java.util.Scanner;
 
 
 
-public class New {
+public class ArraySum {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // Step 1: Take array size
-        System.out.print("Enter number of elements: ");
+        System.out.print("Enter size of array: ");
         int n = sc.nextInt();
 
         int[] arr = new int[n];
+        int sum = 0;
 
-        // Step 2: Take array elements
-        System.out.println("Enter " + n + " elements:");
+        System.out.println("Enter elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
+            sum += arr[i];
         }
 
-        // Step 3: Print array
-        System.out.println("Array elements are:");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        System.out.println("Sum of array elements = " + sum);
 
         sc.close();
     }
