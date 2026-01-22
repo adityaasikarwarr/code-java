@@ -32,29 +32,29 @@ import java.util.Scanner;
 
 
 
-// public class New {
-//     public static void main(String[] args) {
+public class New {
+    public static void main(String[] args) {
 
-//         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-//         // Step 1: Take array size
-//         System.out.print("Enter number of elements: ");
-//         int n = sc.nextInt();
+        // Step 1: Take array size
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
 
-//         int[] arr = new int[n];
+        int[] arr = new int[n];
 
-//         // Step 2: Take array elements
-//         System.out.println("Enter " + n + " elements:");
-//         for (int i = 0; i < n; i++) {
-//             arr[i] = sc.nextInt();
-//         }
+        // Step 2: Take array elements
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
 
-//         // Step 3: Print array
-//         System.out.println("Array elements are:");
-//         for (int i = 0; i < n; i++) {
-//             System.out.print(arr[i] + " ");
-//         }
+        // Step 3: Print array
+        System.out.println("Array elements are:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
 
-//         sc.close();
-//     }
-// }
+        sc.close();
+    }
+}
