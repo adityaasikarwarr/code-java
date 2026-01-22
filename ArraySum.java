@@ -50,6 +50,7 @@ public class ArraySum {
         }
 
         System.out.println("Sum of array elements = " + sum);
+        System.err.println("");
 
         sc.close();
     }
