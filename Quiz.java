@@ -19,7 +19,6 @@ public class Quiz {
 
         int[] answers = { 3, 1, 2, 4, 3 };
         int score = 0;
-        int quess;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -29,10 +28,27 @@ public class Quiz {
 
         for (int i = 0; i < questions.length; i++) {
             System.out.println(questions[i]);
-            for (String option : options[i]){
+            for (String option : options[i]) {
                 System.out.println(option);
             }
+
+            System.out.print("Enter your guess: ");
+            int guess = scanner.nextInt();
+
+            if (guess == answers[i]) {
+                System.out.println("********");
+                System.out.println("CORRECT !");
+                System.out.println("********");
+                score++;
+            } else {
+                System.out.println("********");
+                System.out.println("WRONG!");
+                System.out.println("********");            }
         }
+
+        System.out.println("Your Final Score is : " + score + " out of " + questions.length);
+
+        scanner.close();
 
     };
 
