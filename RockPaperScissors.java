@@ -20,6 +20,7 @@ public class RockPaperScissors {
                     !playerChoice.equals("paper") &&
                     !playerChoice.equals("scissors")) {
                 System.out.println("Invalid Choice");
+                continue;
             }
 
             computerChoice = choices[random.nextInt(3)];
