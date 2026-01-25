@@ -8,7 +8,7 @@ public class Quiz {
                 "What year was Facebook launched ?",
                 "Who is known as the father of computer ?",
                 "what was the first programming language ?" };
-
+                    
         String[][] options = {
                 { "!. Storing files", "2. Encrypting Data", "3. Directing Interney traffic", "4. Managing passwords" },
                 { "1. CPU ", "2. Hard Drive ", "3. RAM", "4. GPU" },
@@ -43,7 +43,8 @@ public class Quiz {
             } else {
                 System.out.println("********");
                 System.out.println("WRONG!");
-                System.out.println("********");            }
+                System.out.println("********");
+            }
         }
 
         System.out.println("Your Final Score is : " + score + " out of " + questions.length);
