@@ -45,6 +45,8 @@ public class RockPaperScissors {
             playAgain = scanner.nextLine().toLowerCase();
         } while (playAgain.equals("yes"));
 
+        System.out.println("Thanks for playing !");
+
         scanner.close();
 
     }
