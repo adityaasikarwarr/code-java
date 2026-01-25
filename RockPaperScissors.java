@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class RockPaperScissors {
     public static void main(String[] args) {
-        
+
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
@@ -28,15 +28,9 @@ public class RockPaperScissors {
 
             System.out.println("It's a tie!");
 
-        } else if (playerChoice.equals("rock") && computerChoice.equals("scissors")) {
-
-            System.out.println("You win!");
-
-        } else if (playerChoice.equals("paper") && computerChoice.equals("rock")) {
-
-            System.out.println("You win!");
-
-        } else if (playerChoice.equals("scissors") && computerChoice.equals("paper")) {
+        } else if (playerChoice.equals("rock") && computerChoice.equals("scissors")
+                || (playerChoice.equals("paper") && computerChoice.equals("rock"))
+                || (playerChoice.equals("scissors") && computerChoice.equals("paper"))) {
 
             System.out.println("You win!");
 
@@ -46,6 +40,6 @@ public class RockPaperScissors {
         }
 
         scanner.close();
-        
+
     }
 };
