@@ -38,16 +38,18 @@ import java.util.*;
 //         }
 //     }
 // }
-class New {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-        String text = "";
-        for (int i = 0; i <= str.length() / 2; i++) {
-            if (i % 2 == 0) {
-                text = text + str.charAt(i) + "#";
-                System.out.println(text);
-            }
-        }
-    }
-}
+// class New {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String str = sc.nextLine();
+//         String text = "";
+//         for (int i = 0; i <= str.length() / 2; i++) {
+//             if (i % 2 == 0) {
+//                 text = text + str.charAt(i) + "#";
+//                 System.out.println(text);
+//             }
+//         }
+//     }
+// }
+
+ 
