@@ -18,9 +18,27 @@
 //   console.log("fail");
 // }
 
-function great(a, b) {
+// function great(a, b) {
+//   return a + b;
+// }
+// console.log(great(6, 7));
+
+// const great = (name) => {};
+
+// function isEven(age) {
+//   if (age >= 18) {
+//     return true;
+//   } else if (age >= 21) {
+//     return "adult";
+//   } else if (age >= 25) {
+//     return "teen";
+//   }
+// }
+// console.log(isEven(50));
+
+function add(a, b) {
   return a + b;
 }
-console.log(great(6, 7));
 
-const great = (name) => {};
+let result = add(5, 10);
+console.log(add( 4 ,5));
