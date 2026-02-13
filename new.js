@@ -18,5 +18,9 @@
 //   console.log("fail");
 // }
 
-console.log(0 == false);
-console.log(0 === false);
+function great(a, b) {
+  return a + b;
+}
+console.log(great(6, 7));
+
+const great = (name) => {};
