@@ -189,23 +189,43 @@
 // const [first, second] = numbers;
 // console.log(first, second);
 
-const product = {
-  name: "Laptop",
-  price: 50000,
-  details: {
-    brand: "Dell",
-    warranty: "1 year",
-  },
-};
+// const product = {
+//   name: "Laptop",
+//   price: 50000,
+//   details: {
+//     brand: "Dell",
+//     warranty: "1 year",
+//   },
+// };
 
-const {
-  name,
-  price,
-  details: { brand },
-} = product;
-const { price: productPrice } = product;
-const { stock: ture } = product;
-console.log(name);
-console.log(price);
-console.log(productPrice);
-console.log(brand);
+// const {
+//   name,
+//   price,
+//   details: { brand },
+// } = product;
+// const { price: productPrice } = product;
+// const { stock: ture } = product;
+// console.log(name);
+// console.log(price);
+// console.log(productPrice);
+// console.log(brand);
+
+// const numbers = [1, 2, 3];
+// const copy = [...numbers, 6]; // this variable is now a new array
+// console.log(copy);
+
+// const user = {
+//   name: " Aditya ",
+//   age: 10,
+//   address: {
+//     city: "Dehri on sone",
+//     pinCode: 821307,
+//   },
+// };
+// const updateUser = {
+//   ...user,
+//   age: 21,
+// };
+// const newUser = { ...user }; // this new variable is new object
+// console.log(newUser);
+// console.log(updateUser); // propreties are changed without any mutation
