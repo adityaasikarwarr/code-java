@@ -129,15 +129,26 @@
 // console.log(finds);
 // console.log(price);
 
-let users = {
-  name: "Aditya",
-  age: 21,
-  isactive: true,
-  address: {
-    city: "Dehri on sone",
-    pinCode: 821307,
-  },
-};
-users.name += " CEO";
-console.log(users.name);
-console.log(users.address.city);
+// let users = {
+//   name: "Aditya",
+//   age: 21,
+//   isactive: true,
+//   address: {
+//     city: "Dehri on sone",
+//     pinCode: 821307,
+//   },
+// };
+// users.name += " CEO";
+// console.log(users.name);
+// console.log(users.address.city);
+
+// const users = [
+//   { name: "Aditya", age: 22 },
+//   { name: "Rahul", age: 17 },
+// ];
+// for (let i = 0; i < users.length; i++) {
+//   console.log(users[i]);
+// }
+// users.forEach((users) => {
+//   console.log(users);
+// });
