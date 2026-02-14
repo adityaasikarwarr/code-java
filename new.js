@@ -162,3 +162,29 @@
 //   };
 // };
 // console.log(updateUser(users));
+
+//destructuring - what it does like it look at the object and make a new variable from the object or array and assigns the value to the new variable
+// const user = {
+//   name: " Aditya ",
+//   age: 10,
+//   address: {
+//     city: "Dehri on sone",
+//     pinCode: 821307,
+//   },
+// };
+// const { name, age } = user;
+// console.log(name);
+// console.log(age);
+// const { name: userName, age: newAge } = user;
+// console.log(userName);
+// console.log(newAge);
+//now two variables exist for the same value of the object
+// const {
+//   address: { city, pinCode },
+// } = user;
+// console.log(city, pinCode);
+
+//array destructing
+// const numbers = [1, 3, 4, 5, 6, 67];
+// const [first, second] = numbers;
+// console.log(first, second);
