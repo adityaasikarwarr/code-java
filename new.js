@@ -188,3 +188,24 @@
 // const numbers = [1, 3, 4, 5, 6, 67];
 // const [first, second] = numbers;
 // console.log(first, second);
+
+const product = {
+  name: "Laptop",
+  price: 50000,
+  details: {
+    brand: "Dell",
+    warranty: "1 year",
+  },
+};
+
+const {
+  name,
+  price,
+  details: { brand },
+} = product;
+const { price: productPrice } = product;
+const { stock: ture } = product;
+console.log(name);
+console.log(price);
+console.log(productPrice);
+console.log(brand);
