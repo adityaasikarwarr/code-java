@@ -82,14 +82,49 @@
 // console.log(names);
 
 // filter() function only selects the elemts with special conditions
-let users = [
-  { name: "Aditya", age: 22 },
-  { name: "Rahul", age: 17 },
-  { name: "keshar", age: 25 },
+// let users = [
+//   { name: "Aditya", age: 22 },
+//   { name: "Rahul", age: 17 },
+//   { name: "keshar", age: 25 },
+// ];
+// let names = users.filter(function (users) {
+//   return users.age > 20;
+// });
+// let namess = users.filter((users) => users.name === "Aditya");
+// console.log(namess);
+// console.log(names);
+
+// find() returns only the first matching item. if nothing found i returns undefined
+
+const products = [
+  { name: "lenovo", price: 50000 },
+  { name: "hp", price: 10000 },
+  { name: "dell", price: 20000 },
 ];
-let names = users.filter(function (users) {
-  return users.age > 20;
+
+let find = products.map(function (products) {
+  return products.name;
 });
-let namess = users.filter((users) => users.name === "Aditya");
-console.log(namess);
-console.log(names);
+const updateProducts = products.map((products) => {
+  return {
+    ...products, //keep the other elemnts same do not change anything
+    price: products.price + 10000,
+  };
+});
+console.log(updateProducts);
+
+const updateProductss = products.map((products) => {
+  if (products.price > 10000) {
+    return {
+      ...products,
+      name: "heheh",
+    };
+  }
+});
+console.log(updateProductss);
+
+let price = products.filter((products) => products.price > 20000);
+let finds = products.find((products) => products.price === 10000);
+console.log(find);
+console.log(finds);
+console.log(price);
