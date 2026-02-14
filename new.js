@@ -152,3 +152,13 @@
 // users.forEach((users) => {
 //   console.log(users);
 // });
+// for (let key in users) {
+//   console.log(key, users[key]);
+// }
+// const updateUser = (users) => {
+//   return {
+//     ...users,
+//     age: 56,
+//   };
+// };
+// console.log(updateUser(users));
