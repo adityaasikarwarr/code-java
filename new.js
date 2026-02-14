@@ -59,7 +59,7 @@
 // });
 
 // numbers.forEach((num) => console.log(num * num));
-// for each function do something for each element of the array
+// foreach() function do something for each element of the array
 
 //map() function creates a new array and transform all the elements
 // let numbers = [5, 6, 4, 3, 5, 3];
@@ -80,3 +80,16 @@
 // let namess = users.map((users) => users.name);
 // console.log(namess);
 // console.log(names);
+
+// filter() function only selects the elemts with special conditions
+let users = [
+  { name: "Aditya", age: 22 },
+  { name: "Rahul", age: 17 },
+  { name: "keshar", age: 25 },
+];
+let names = users.filter(function (users) {
+  return users.age > 20;
+});
+let namess = users.filter((users) => users.name === "Aditya");
+console.log(namess);
+console.log(names);
