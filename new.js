@@ -36,9 +36,19 @@
 // }
 // console.log(isEven(50));
 
-function add(a, b) {
-  return a + b;
-}
+// function add(a, b) {
+//   return a + b;
+// }
+// let result = add(5, 10);
+// console.log(add( 4 ,5));
 
-let result = add(5, 10);
-console.log(add( 4 ,5));
+let numbers = [5, 6, 4, 3, 5, 3];
+console.log(numbers[0]);
+let users = [
+  { name: "aditya", age: 56 },
+  { name: "ramesh", age: 56 },
+];
+console.log(users)
+for (let i = 0 ; i < numbers.length ; i++){
+  console.log(numbers[i])
+}
