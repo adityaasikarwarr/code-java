@@ -52,3 +52,11 @@
 // for (let i = 0 ; i < numbers.length ; i++){
 //   console.log(numbers[i])
 // }
+
+let numbers = [5, 6, 4, 3, 5, 3];
+numbers.forEach(function (num) {
+  console.log(num * num);
+});
+
+numbers.forEach((num) => console.log(num * num));
+// for each function do something for each element of the array
