@@ -229,3 +229,35 @@
 // const newUser = { ...user }; // this new variable is new object
 // console.log(newUser);
 // console.log(updateUser); // propreties are changed without any mutation
+
+//task
+// const cart = [
+//   { item: "Laptop", price: 50000 },
+//   { item: "Phone", price: 20000 },
+// ];
+// const updateKart = [...cart, { item: "computer", price: 50000 }];
+// console.log(updateKart);
+
+// const updatekartt = cart.map((cart) => {
+//   if (cart.item === "Laptop") {
+//     return {
+//       ...cart,
+//       price: cart.price + 10000,
+//     };
+//   }
+//   return cart;
+// });
+// console.log(updatekartt);
+
+// const update = cart.map((cart) =>
+//   cart.item === "Laptop"
+//     ? {
+//         ...cart,
+//         price: cart.price + 10000,
+//       }
+//     : cart,
+// );
+// console.log(update);
+
+// const cartCopy = cart.map((cart) => ({ ...cart }));
+// console.log(cartCopy);
