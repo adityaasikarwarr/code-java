@@ -96,35 +96,48 @@
 
 // find() returns only the first matching item. if nothing found i returns undefined
 
-const products = [
-  { name: "lenovo", price: 50000 },
-  { name: "hp", price: 10000 },
-  { name: "dell", price: 20000 },
-];
+// const products = [
+//   { name: "lenovo", price: 50000 },
+//   { name: "hp", price: 10000 },
+//   { name: "dell", price: 20000 },
+// ];
 
-let find = products.map(function (products) {
-  return products.name;
-});
-const updateProducts = products.map((products) => {
-  return {
-    ...products, //keep the other elemnts same do not change anything
-    price: products.price + 10000,
-  };
-});
-console.log(updateProducts);
+// let find = products.map(function (products) {
+//   return products.name;
+// });
+// const updateProducts = products.map((products) => {
+//   return {
+//     ...products, //keep the other elemnts same do not change anything
+//     price: products.price + 10000,
+//   };
+// });
+// console.log(updateProducts);
 
-const updateProductss = products.map((products) => {
-  if (products.price > 10000) {
-    return {
-      ...products,
-      name: "heheh",
-    };
-  }
-});
-console.log(updateProductss);
+// const updateProductss = products.map((products) => {
+//   if (products.price > 10000) {
+//     return {
+//       ...products,
+//       name: "heheh",
+//     };
+//   }
+// });
+// console.log(updateProductss);
 
-let price = products.filter((products) => products.price > 20000);
-let finds = products.find((products) => products.price === 10000);
-console.log(find);
-console.log(finds);
-console.log(price);
+// let price = products.filter((products) => products.price > 20000);
+// let finds = products.find((products) => products.price === 10000);
+// console.log(find);
+// console.log(finds);
+// console.log(price);
+
+let users = {
+  name: "Aditya",
+  age: 21,
+  isactive: true,
+  address: {
+    city: "Dehri on sone",
+    pinCode: 821307,
+  },
+};
+users.name += " CEO";
+console.log(users.name);
+console.log(users.address.city);
