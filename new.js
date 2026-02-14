@@ -62,10 +62,21 @@
 // for each function do something for each element of the array
 
 //map() function creates a new array and transform all the elements
-let numbers = [5, 6, 4, 3, 5, 3];
-let doubled = numbers.map((num) => num * 2);
-console.log(doubled);
-let failed = numbers.map(function (num) {
-  return num * num;
-});
-console.log(failed)
+// let numbers = [5, 6, 4, 3, 5, 3];
+// let doubled = numbers.map((num) => num * 2);
+// console.log(doubled);
+// let failed = numbers.map(function (num) {
+//   return num * num;
+// });
+// console.log(failed)
+
+// let users = [
+//   { name: "Aditya", age: 22 },
+//   { name: "Rahul", age: 17 },
+// ];
+// let names = users.map(function (users) {
+//   return users.name;
+// });
+// let namess = users.map((users) => users.name);
+// console.log(namess);
+// console.log(names);
