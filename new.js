@@ -53,10 +53,19 @@
 //   console.log(numbers[i])
 // }
 
-let numbers = [5, 6, 4, 3, 5, 3];
-numbers.forEach(function (num) {
-  console.log(num * num);
-});
+// let numbers = [1, 2, 3, 4, 5, 6];
+// numbers.forEach(function (num) {
+//   console.log(num * 2);
+// });
 
-numbers.forEach((num) => console.log(num * num));
+// numbers.forEach((num) => console.log(num * num));
 // for each function do something for each element of the array
+
+//map() function creates a new array and transform all the elements
+let numbers = [5, 6, 4, 3, 5, 3];
+let doubled = numbers.map((num) => num * 2);
+console.log(doubled);
+let failed = numbers.map(function (num) {
+  return num * num;
+});
+console.log(failed)
