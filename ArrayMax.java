@@ -1,9 +1,9 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // public static void main(String[] args) {
 //     Scanner input = new Scanner(System.in);
 
-//     // getting employee details
+    // getting employee details
 //     System.out.print("enter your name : ");
 //     String name = input.next();
 //     input.next();
