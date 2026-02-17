@@ -263,33 +263,38 @@
 // console.log(cartCopy);
 
 // function call back - functions can be called as arguments for another function
-function greet(name) {
-  console.log("hello" + name);
+// function greet(name) {
+//   console.log("hello" + name);
+// }
+// function processUser() {
+//   console.log("aditya");
+// }
+// processUser(greet("aditrya"));
+
+// function calculator(a, b, operation) {
+//   return operation(a, b);
+// }
+// function add(x, y) {
+//   return x + y;
+// }
+// console.log(calculator(4, 5, add));
+
+// function sayHello(name) {
+//   console.log("Hello " + name);
+// }
+// function processUser(callback) {
+//   const name = "Aditya";
+//   callback(name);
+// }
+// processUser(sayHello);
+
+//asynchrons function -
+function hello(callback) {
+  console.log("Hello");
+  callback();
 }
-
-function processUser() {
-  console.log("aditya");
+function nice() {
+  console.log("nice");
 }
-processUser(greet("aditrya"));
-
-function calculator(a, b, operation) {
-  return operation(a, b);
-}
-
-function add(x, y) {
-  return x + y;
-}
-
-console.log(calculator(4, 5, add));
-
-
-function sayHello(name) {
-  console.log("Hello " + name);
-}
-
-function processUser(callback) {
-  const name = "Aditya";
-  callback(name);
-}
-
-processUser(sayHello);
+hello(nice);
+//as we are passign another function as argument to another function we are calling the argument function insdie the original functions to the functions to be executed
