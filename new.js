@@ -261,3 +261,35 @@
 
 // const cartCopy = cart.map((cart) => ({ ...cart }));
 // console.log(cartCopy);
+
+// function call back - functions can be called as arguments for another function
+function greet(name) {
+  console.log("hello" + name);
+}
+
+function processUser() {
+  console.log("aditya");
+}
+processUser(greet("aditrya"));
+
+function calculator(a, b, operation) {
+  return operation(a, b);
+}
+
+function add(x, y) {
+  return x + y;
+}
+
+console.log(calculator(4, 5, add));
+
+
+function sayHello(name) {
+  console.log("Hello " + name);
+}
+
+function processUser(callback) {
+  const name = "Aditya";
+  callback(name);
+}
+
+processUser(sayHello);
