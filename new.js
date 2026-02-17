@@ -298,3 +298,14 @@ function nice() {
 }
 hello(nice);
 //as we are passign another function as argument to another function we are calling the argument function insdie the original functions to the functions to be executed
+
+function add(callback, x, y) {
+  const result = x + y;
+  callback(result);
+}
+
+function sum(result) {
+  document.getElementById("sum1").textContent = result;
+}
+
+add(sum, 2, 4);
