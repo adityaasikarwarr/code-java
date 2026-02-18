@@ -330,7 +330,12 @@ const neww = new Promise((resolve, reject) => {
 function walkDog() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("walked the dog");
+      const dog = true;
+      if (dog) {
+        resolve("you walked the dog");
+      } else {
+        resolve("you did not walk the dog");
+      }
     }, 1500);
   });
 }
@@ -338,7 +343,12 @@ function walkDog() {
 function cleanKitchen() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("cleaned the kitchen");
+      const kitchen = true;
+      if (kitchen) {
+        resolve("cleaned the kitchen");
+      } else {
+        resolve("you did not clean the kitchen");
+      }
     }, 2500);
   });
 }
@@ -346,7 +356,12 @@ function cleanKitchen() {
 function takeOutTrash() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("take out the trash");
+      const takeOut = true;
+      if (takeOut) {
+        resolve("take out the trash");
+      } else {
+        resolve("You did not take out the dog");
+      }
     }, 500);
   });
 }
