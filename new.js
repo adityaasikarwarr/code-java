@@ -307,16 +307,36 @@
 // function sum(result) {
 //   document.getElementById("sum1").textContent = result;
 // }
-
 // add(sum, 2, 4);
 
-function delayedMessage(message, callback) {
-  setTimeout(function () {
-    callback(message);
-  }, 2000);
-}
-function show(result) {
-  console.log(result);
+// promise - it is a way to handle asynchronous operations in JavaScript. it represents a value that may be available now, or in the future, or never. it has three states - pending, fulfilled, rejected
+
+// const newPromise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log("hello");
+//   }, 2000);
+// });
+
+// newPromise.then((result) => {
+//   console.log(result);
+// });
+// console.log(newPromise);
+
+const neww = new Promise((resolve, reject) => {
+  resolve("success");
+  reject("not success");
+}); // basic promise structure
+
+function checkNumber(num) {
+  return new Promise((resolve, reject) => {
+    if (num > 10) {
+      resolve("Big number");
+    } else {
+      reject("Small number");
+    }
+  });
 }
 
-delayedMessage("Hello after 2 seconds", show);
+checkNumber(10)
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
