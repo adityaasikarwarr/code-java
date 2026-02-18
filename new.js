@@ -322,60 +322,63 @@
 // });
 // console.log(newPromise);
 
-const neww = new Promise((resolve, reject) => {
-  resolve("success");
-  reject("not success");
-}); // basic promise structure
+// const neww = new Promise((resolve, reject) => {
+//   resolve("success");
+//   reject("not success");
+// }); // basic promise structure
 
-function walkDog() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const dog = true;
-      if (dog) {
-        resolve("you walked the dog");
-      } else {
-        resolve("you did not walk the dog");
-      }
-    }, 1500);
-  });
-}
+// function walkDog() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const dog = true;
+//       if (dog) {
+//         resolve("you walked the dog");
+//       } else {
+//         resolve("you did not walk the dog");
+//       }
+//     }, 1500);
+//   });
+// }
 
-function cleanKitchen() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const kitchen = true;
-      if (kitchen) {
-        resolve("cleaned the kitchen");
-      } else {
-        resolve("you did not clean the kitchen");
-      }
-    }, 2500);
-  });
-}
+// function cleanKitchen() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const kitchen = true;
+//       if (kitchen) {
+//         resolve("cleaned the kitchen");
+//       } else {
+//         resolve("you did not clean the kitchen");
+//       }
+//     }, 2500);
+//   });
+// }
 
-function takeOutTrash() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const takeOut = true;
-      if (takeOut) {
-        resolve("take out the trash");
-      } else {
-        resolve("You did not take out the dog");
-      }
-    }, 500);
-  });
-}
+// function takeOutTrash() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const takeOut = false;
+//       if (takeOut) {
+//         resolve("take out the trash");
+//       } else {
+//         resolve("You did not take out the dog");
+//       }
+//     }, 500);
+//   });
+// }
 
-walkDog()
-  .then((value) => {
-    console.log(value);
-    return cleanKitchen();
-  })
-  .then((value) => {
-    console.log(value);
-    return takeOutTrash();
-  })
-  .then((value) => {
-    console.log(value);
-    console.log("You finished the chore ");
-  });
+// walkDog()
+//   .then((value) => {
+//     console.log(value);
+//     return cleanKitchen();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     return takeOutTrash();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     console.log("You finished the chore ");
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });
