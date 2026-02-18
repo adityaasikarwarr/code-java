@@ -327,16 +327,40 @@ const neww = new Promise((resolve, reject) => {
   reject("not success");
 }); // basic promise structure
 
-function checkNumber(num) {
+function walkDog() {
   return new Promise((resolve, reject) => {
-    if (num > 10) {
-      resolve("Big number");
-    } else {
-      reject("Small number");
-    }
+    setTimeout(() => {
+      resolve("walked the dog");
+    }, 1500);
   });
 }
 
-checkNumber(10)
-  .then((result) => console.log(result))
-  .catch((error) => console.log(error));
+function cleanKitchen() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("cleaned the kitchen");
+    }, 2500);
+  });
+}
+
+function takeOutTrash() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("take out the trash");
+    }, 500);
+  });
+}
+
+walkDog()
+  .then((value) => {
+    console.log(value);
+    return cleanKitchen();
+  })
+  .then((value) => {
+    console.log(value);
+    return takeOutTrash();
+  })
+  .then((value) => {
+    console.log(value);
+    console.log("You finished the chore ");
+  });
