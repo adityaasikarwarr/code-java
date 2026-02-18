@@ -289,23 +289,34 @@
 // processUser(sayHello);
 
 //asynchrons function -
-function hello(callback) {
-  console.log("Hello");
-  callback();
-}
-function nice() {
-  console.log("nice");
-}
-hello(nice);
+// function hello(callback) {
+//   console.log("Hello");
+//   callback();
+// }
+// function nice() {
+//   console.log("nice");
+// }
+// hello(nice);
 //as we are passign another function as argument to another function we are calling the argument function insdie the original functions to the functions to be executed
 
-function add(callback, x, y) {
-  const result = x + y;
-  callback(result);
+// function add(callback, x, y) {
+//   const result = x + y;
+//   callback(result);
+// }
+
+// function sum(result) {
+//   document.getElementById("sum1").textContent = result;
+// }
+
+// add(sum, 2, 4);
+
+function delayedMessage(message, callback) {
+  setTimeout(function () {
+    callback(message);
+  }, 2000);
+}
+function show(result) {
+  console.log(result);
 }
 
-function sum(result) {
-  document.getElementById("sum1").textContent = result;
-}
-
-add(sum, 2, 4);
+delayedMessage("Hello after 2 seconds", show);
