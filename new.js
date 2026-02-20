@@ -385,26 +385,33 @@ function takeOutTrash() {
 
 // async and await - async makes the function return promise automatically.
 
-async function chores() {
-  try {
-    const dogWalk = await walkDog();
-    console.log(dogWalk);
+// async function chores() {
+//   try {
+//     const dogWalk = await walkDog();
+//     console.log(dogWalk);
 
-    const kitchen = await cleanKitchen();
-    console.log(kitchen);
+//     const kitchen = await cleanKitchen();
+//     console.log(kitchen);
 
-    const trash = await takeOutTrash();
-    console.log(trash);
+//     const trash = await takeOutTrash();
+//     console.log(trash);
 
-    console.log("You finished the chores");
-  } catch (error) {
-    console.error(error);
-  }
-}
+//     console.log("You finished the chores");
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
 
-chores();
+// chores();
 
-async function myFun() {
-  return "Hello";
-}
-myFun().then((value) => console.log(value));
+// async function myFun() {
+//   return "Hello";
+// }
+// myFun().then((value) => console.log(value));
+
+//fetch API - it is a modern way to make network requests in JavaScript. it returns a promise that resolves to the response of the request. it is used to get data from a server or send data to a server
+// function used for making http requests to fetch resources from a server. it is a modern way to make network requests in JavaScript. it returns a promise that resolves to the response of the request. it is used to get data from a server or send data to a server.
+fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+  .then((response) => response.json())
+  .then((data) => console.log(data.id))
+  .catch((error) => console.log(error));
