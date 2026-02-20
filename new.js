@@ -330,7 +330,7 @@
 function walkDog() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const dog = true;
+      const dog = false;
       if (dog) {
         resolve("you walked the dog");
       } else {
@@ -386,14 +386,20 @@ function takeOutTrash() {
 // async and await - async makes the function return promise automatically.
 
 async function chores() {
-  const dogWalk = await walkDog();
-  console.log(dogWalk);
+  try {
+    const dogWalk = await walkDog();
+    console.log(dogWalk);
 
-  const kitchen = await cleanKitchen();
-  console.log(kitchen);
+    const kitchen = await cleanKitchen();
+    console.log(kitchen);
 
-  const trash = await takeOutTrash();
-  console.log(trash);
+    const trash = await takeOutTrash();
+    console.log(trash);
+
+    console.log("You finished the chores");
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 chores();
