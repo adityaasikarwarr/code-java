@@ -327,44 +327,44 @@
 //   reject("not success");
 // }); // basic promise structure
 
-// function walkDog() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const dog = true;
-//       if (dog) {
-//         resolve("you walked the dog");
-//       } else {
-//         resolve("you did not walk the dog");
-//       }
-//     }, 1500);
-//   });
-// }
+function walkDog() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const dog = true;
+      if (dog) {
+        resolve("you walked the dog");
+      } else {
+        resolve("you did not walk the dog");
+      }
+    }, 1500);
+  });
+}
 
-// function cleanKitchen() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const kitchen = true;
-//       if (kitchen) {
-//         resolve("cleaned the kitchen");
-//       } else {
-//         resolve("you did not clean the kitchen");
-//       }
-//     }, 2500);
-//   });
-// }
+function cleanKitchen() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const kitchen = true;
+      if (kitchen) {
+        resolve("cleaned the kitchen");
+      } else {
+        resolve("you did not clean the kitchen");
+      }
+    }, 2500);
+  });
+}
 
-// function takeOutTrash() {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       const takeOut = false;
-//       if (takeOut) {
-//         resolve("take out the trash");
-//       } else {
-//         resolve("You did not take out the dog");
-//       }
-//     }, 500);
-//   });
-// }
+function takeOutTrash() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const takeOut = false;
+      if (takeOut) {
+        resolve("take out the trash");
+      } else {
+        resolve("You did not take out the dog");
+      }
+    }, 500);
+  });
+}
 
 // walkDog()
 //   .then((value) => {
@@ -382,3 +382,23 @@
 //   .catch((error) => {
 //     console.error(error);
 //   });
+
+// async and await - async makes the function return promise automatically.
+
+async function chores() {
+  const dogWalk = await walkDog();
+  console.log(dogWalk);
+
+  const kitchen = await cleanKitchen();
+  console.log(kitchen);
+
+  const trash = await takeOutTrash();
+  console.log(trash);
+}
+
+chores();
+
+async function myFun() {
+  return "Hello";
+}
+myFun().then((value) => console.log(value));
