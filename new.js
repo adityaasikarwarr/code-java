@@ -327,44 +327,44 @@
 //   reject("not success");
 // }); // basic promise structure
 
-function walkDog() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const dog = false;
-      if (dog) {
-        resolve("you walked the dog");
-      } else {
-        resolve("you did not walk the dog");
-      }
-    }, 1500);
-  });
-}
+// function walkDog() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const dog = false;
+//       if (dog) {
+//         resolve("you walked the dog");
+//       } else {
+//         resolve("you did not walk the dog");
+//       }
+//     }, 1500);
+//   });
+// }
 
-function cleanKitchen() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const kitchen = true;
-      if (kitchen) {
-        resolve("cleaned the kitchen");
-      } else {
-        resolve("you did not clean the kitchen");
-      }
-    }, 2500);
-  });
-}
+// function cleanKitchen() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const kitchen = true;
+//       if (kitchen) {
+//         resolve("cleaned the kitchen");
+//       } else {
+//         resolve("you did not clean the kitchen");
+//       }
+//     }, 2500);
+//   });
+// }
 
-function takeOutTrash() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const takeOut = false;
-      if (takeOut) {
-        resolve("take out the trash");
-      } else {
-        resolve("You did not take out the dog");
-      }
-    }, 500);
-  });
-}
+// function takeOutTrash() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const takeOut = false;
+//       if (takeOut) {
+//         resolve("take out the trash");
+//       } else {
+//         resolve("You did not take out the dog");
+//       }
+//     }, 500);
+//   });
+// }
 
 // walkDog()
 //   .then((value) => {
@@ -411,7 +411,35 @@ function takeOutTrash() {
 
 //fetch API - it is a modern way to make network requests in JavaScript. it returns a promise that resolves to the response of the request. it is used to get data from a server or send data to a server
 // function used for making http requests to fetch resources from a server. it is a modern way to make network requests in JavaScript. it returns a promise that resolves to the response of the request. it is used to get data from a server or send data to a server.
-fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
-  .then((response) => response.json())
-  .then((data) => console.log(data.id))
-  .catch((error) => console.log(error));
+// fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok");
+//     }
+//     return response.json();
+//   })
+//   .then((data) => console.log(data.id))
+//   .catch((error) => console.log(error));
+
+async function fetchData(params) {
+  try {
+    const pokemonName = document
+      .getElementById("pokemonName")
+      .value.toLowerCase();
+
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu");
+
+    if (!response.ok) {
+      throw new Error("not working");
+    }
+
+    const data = await response.json();
+    const pokemonSprite = data.sprites.front_default;
+    const ImgElement = document.getElementById("pokemonSprite");
+
+    ImgElement.src = pokemonSprite;
+    ImgElement.style.display = "block";
+  } catch (error) {}
+}
+
+fetchData();
