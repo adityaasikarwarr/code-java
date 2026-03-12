@@ -11,7 +11,7 @@ public class ContactManagement {
         int choice;
 
         do {
-            System.out.println("\n===== CONTACT MANAGEMENT =====");
+            System.out.println("\n CONTACT MANAGEMENT ");
             System.out.println("1. Add Contact");
             System.out.println("2. Display Contacts");
             System.out.println("3. Exit");
@@ -39,11 +39,10 @@ public class ContactManagement {
                 if (count == 0) {
                     System.out.println("No contacts found.");
                 } else {
-                    System.out.println("\n===== CONTACT LIST =====");
+                    System.out.println("\n CONTACT LIST ");
                     for (int i = 0; i < count; i++) {
                         System.out.println("Name  : " + names[i]);
                         System.out.println("Phone : " + phones[i]);
-                        System.out.println("----------------------");
                     }   
                 }
             }
