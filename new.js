@@ -443,3 +443,21 @@
 // }
 
 // fetchData();
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question("Enter any text: ", (input) => {
+  const numbers = [];
+
+  for (let i = 0; i < input.length; i++) {
+    numbers.push(input.charCodeAt(i));
+  }
+
+  console.log("Number form:", numbers.join(" "));
+  rl.close();
+});
